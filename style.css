@@ -47,7 +47,7 @@ html {
       rgba(117, 117, 117, 0.6) 25%,
       rgba(0, 0, 0, 0.9) 70%
     ),
-    url(/img/bg1.png);
+    url(./img/bg1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -270,7 +270,7 @@ h2::after {
 }
 .services {
   /* The image used */
-  background-image: url("/img/instalacja.png");
+  background-image: url("./img/instalacja.png");
 
   /* Full height */
   height: 90vh;
@@ -286,7 +286,7 @@ h2::after {
   padding: 0;
 }
 .services--two {
-  background-image: url(/img/konstrukcje.png);
+  background-image: url("./img/konstrukcje.png");
 }
 .services__description {
   bottom: 5vh;
@@ -352,7 +352,7 @@ h2::after {
         rgba(37, 37, 37, 0.6) 25%,
         rgba(0, 0, 0, 0.85) 70%
       ),
-      url(/img/bg1.png);
+      url("./img/bg1.png");
     background-position-x: 20%;
   }
 
@@ -362,7 +362,7 @@ h2::after {
         rgba(37, 37, 37, 0.6) 25%,
         rgba(0, 0, 0, 0.85) 70%
       ),
-      url(/img/bg2.png);
+      url("./img/bg2.png");
     background-position-x: 40%;
   }
   100% {
@@ -371,7 +371,7 @@ h2::after {
         rgba(37, 37, 37, 0.6) 25%,
         rgba(0, 0, 0, 0.85) 70%
       ),
-      url(/img/bg3.png);
+      url("./img/bg3.png");
     background-position-x: 50%;
   }
 }
