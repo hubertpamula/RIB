@@ -21,63 +21,95 @@
   </head>
   <body>
     <nav class="mobile__nav"></nav>
-    <div class="header">
-      <img class="header__logo" src="/img/logo.png" alt="" />
-      <svg class="header__burger">
-        <use href="/img/icons.svg#icon-menu"></use>
-      </svg>
-    </div>
     <main class="main">
+      <div class="aaa"></div>
+      <div id="navbar">
+        <img class="header__logo" src="/img/logo.png" alt="" />
+        <svg class="header__burger">
+          <use href="/img/icons.svg#icon-menu"></use>
+        </svg>
+      </div>
       <div class="hero">
         <h1 class="hero__header">
-          <span>Profesjonalne</span> Instalacje Technologiczne
+          <span class="hero__header--big">Profesjonalne</span> Instalacje
+          Technologiczne
         </h1>
         <div class="hero__bottom">
           <p class="hero__description">
-            Jesteśmy specjalistami w projektowaniu instalacji technologicznycj
+            Jesteśmy specjalistami w projektowaniu instalacji technologicznych
             dla mediów o kategorii towarów niebezpiecznych.
           </p>
-          <ul class="hero__buttons">
-            <li><button class="kontakt">Kontakt</button></li>
-            <li><button class="galeria">Galeria</button></li>
-          </ul>
         </div>
       </div>
+      <ul class="hero__buttons">
+        <li><a href="#contact" class="kontakt">Kontakt</a></li>
+        <li><a href="#services" class="galeria">usługi</a></li>
+      </ul>
       <svg class="hero__arrow bounceOutDown">
         <use href="/img/icons.svg#icon-arrow"></use>
       </svg>
     </main>
-    <p class="hero__description white">
-      Jesteśmy specjalistami w projektowaniu instalacji technologicznycj dla
-      mediów o kategorii towarów niebezpiecznych.
-    </p>
-    <p class="hero__description white">
-      Jesteśmy specjalistami w projektowaniu instalacji technologicznycj dla
-      mediów o kategorii towarów niebezpiecznych.
-    </p>
-    <p class="hero__description white">
-      Jesteśmy specjalistami w projektowaniu instalacji technologicznycj dla
-      mediów o kategorii towarów niebezpiecznych.
-    </p>
-    <p class="hero__description white">
-      Jesteśmy specjalistami w projektowaniu instalacji technologicznycj dla
-      mediów o kategorii towarów niebezpiecznych.
-    </p>
-    <p class="hero__description white">
-      Jesteśmy specjalistami w projektowaniu instalacji technologicznycj dla
-      mediów o kategorii towarów niebezpiecznych.
-    </p>
-    <p class="hero__description white">
-      Jesteśmy specjalistami w projektowaniu instalacji technologicznycj dla
-      mediów o kategorii towarów niebezpiecznych.
-    </p>
-    <p class="hero__description white">
-      Jesteśmy specjalistami w projektowaniu instalacji technologicznycj dla
-      mediów o kategorii towarów niebezpiecznych.
-    </p>
-    <p class="hero__description white">
-      Jesteśmy specjalistami w projektowaniu instalacji technologicznycj dla
-      mediów o kategorii towarów niebezpiecznych.
-    </p>
+    <section class="about">
+      <h2 class="about__header">O Firmie</h2>
+      <p class="about__description">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+        consequuntur deserunt quasi ipsam! Enim mollitia rerum, error accusamus
+        consequatur beatae, ex corporis sapiente at, ab in eos minima
+        repellendus iste. consequuntur deserunt quasi ipsam! Enim mollitia
+        rerum, error accusamus consequatur beatae, ex corporis sapiente at
+      </p>
+    </section>
+    <section class="services" id="services">
+      <div class="services__description">Instalacje technologiczne</div>
+    </section>
+    <section class="certificates">
+      <h2 class="certificates__header">certyfikaty</h2>
+      <div class="certificates__container">
+        <img
+          class="certificates__img"
+          src="/img/certyfikat.png"
+          alt="certyfikat"
+        />
+        <img
+          class="certificates__img"
+          src="/img/certyfikat.png"
+          alt="certyfikat"
+        />
+        <img
+          class="certificates__img"
+          src="/img/certyfikat.png"
+          alt="certyfikat"
+        />
+        <img
+          class="certificates__img"
+          src="/img/certyfikat.png"
+          alt="certyfikat"
+        />
+      </div>
+    </section>
+    <section class="services services--two">
+      <div class="services__description">konstrukcje stalowe</div>
+    </section>
+    <section class="contact" id="contact">
+      <h2>kontakt</h2>
+      <div></div>
+    </section>
+
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("navbar");
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
   </body>
 </html>
