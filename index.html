@@ -10,11 +10,17 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
-    <nav class="Back"></nav>
+    <nav class="mobile__nav"></nav>
     <div class="header">
       <img class="header__logo" src="/img/logo.png" alt="" />
       <svg class="header__burger">
@@ -23,16 +29,18 @@
     </div>
     <main class="main">
       <div class="hero">
-        <h1 class="hero__header">Profesjonalne Instalacje Technologiczne</h1>
+        <h1 class="hero__header">
+          <span>Profesjonalne</span> Instalacje Technologiczne
+        </h1>
         <div class="hero__bottom">
-          <ul>
-            <li><button>Kontakt</button></li>
-            <li><button class="aaa">Galeria</button></li>
-          </ul>
           <p class="hero__description">
             Jesteśmy specjalistami w projektowaniu instalacji technologicznycj
             dla mediów o kategorii towarów niebezpiecznych.
           </p>
+          <ul class="hero__buttons">
+            <li><button class="kontakt">Kontakt</button></li>
+            <li><button class="galeria">Galeria</button></li>
+          </ul>
         </div>
       </div>
       <svg class="hero__arrow bounceOutDown">
