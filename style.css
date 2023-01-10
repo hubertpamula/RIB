@@ -280,7 +280,8 @@ h2::after {
   height: 90vh;
 
   /* Create the parallax scrolling effect */
-  background-attachment: fixed;
+  background-attachment: scroll;
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -294,19 +295,6 @@ h2::after {
 }
 .services--two {
   background-image: url("./img/konstrukcje.png");
-}
-@supports (-webkit-touch-callout: none) {
-  .services,
-  .services--two {
-    background-attachment: scroll;
-  }
-}
-
-@supports not (-webkit-touch-callout: none) {
-  .services,
-  .services--two {
-    background-attachment: fixed;
-  }
 }
 .services__description {
   bottom: 5vh;
