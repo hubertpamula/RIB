@@ -66,7 +66,7 @@ html {
 }
 #navbar {
   position: fixed;
-  top: 30px;
+  top: 10px;
   left: 0;
   z-index: 100;
   display: flex;
@@ -108,8 +108,8 @@ html {
   flex-direction: column;
   justify-content: space-around;
   gap: 100px;
-  margin-top: 180px;
-  margin-bottom: 110px;
+  margin-top: 100px;
+  margin-bottom: 150px;
   height: 100%;
   width: 100%;
   color: rgb(255, 255, 255);
@@ -211,7 +211,7 @@ html {
 }
 
 section {
-  margin-block: 100px 100px;
+  /* margin-block: 50px 50px; */
   padding: 80px 10px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   background-color: #7d8794;
@@ -282,7 +282,7 @@ h2::after {
   background-image: url("./img/konstrukcje.png");
 }
 .services__description {
-  bottom: 5vh;
+  bottom: 2vh;
   position: sticky;
   font-size: 1.2rem;
   font-weight: 400;
@@ -290,11 +290,11 @@ h2::after {
   letter-spacing: 0.5rem;
   text-align: center;
   width: 100%;
-  padding-block: 2%;
+  padding-block: 3%;
   padding-inline: 10px;
   background-color: rgba(0, 173, 116, 0.8);
   backdrop-filter: blur(5px);
-  margin-bottom: 5vh;
+  margin-bottom: 2vh;
 }
 .certificates {
   background-color: white;
