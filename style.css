@@ -1,19 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
-body:after {
-  content: "";
-  position: fixed; /* stretch a fixed position to the whole screen */
-  top: 0;
-  height: 100vh; /* fix for mobile browser address bar appearing disappearing */
-  left: 0;
-  right: 0;
-  z-index: -1; /* needed to keep in the background */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -306,6 +294,19 @@ h2::after {
 }
 .services--two {
   background-image: url("./img/konstrukcje.png");
+}
+@supports (-webkit-touch-callout: none) {
+  .services,
+  .services--two {
+    background-attachment: scroll;
+  }
+}
+
+@supports not (-webkit-touch-callout: none) {
+  .services,
+  .services--two {
+    background-attachment: fixed;
+  }
 }
 .services__description {
   bottom: 5vh;
