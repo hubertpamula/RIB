@@ -28,6 +28,11 @@ html {
   background: rgb(37, 37, 37);
 }
 
+::after,
+::before {
+  opacity: 0;
+}
+
 .mobile__nav {
   position: absolute;
   z-index: 300;
@@ -57,7 +62,7 @@ html {
   -o-background-size: cover;
   background-position: center center;
   animation: slideBg 40s linear infinite 0s;
-  height: 100vh;
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -109,7 +114,7 @@ html {
   justify-content: space-around;
   gap: 100px;
   margin-top: 100px;
-  margin-bottom: 150px;
+  /* margin-bottom: 50px; */
   height: 100%;
   width: 100%;
   color: rgb(255, 255, 255);
@@ -121,7 +126,7 @@ html {
   letter-spacing: 0.2rem;
   color: rgb(255, 255, 255);
   width: min-content;
-  margin-left: 10px;
+  margin-inline: auto;
   position: relative;
 }
 .hero__header--big {
@@ -137,6 +142,18 @@ html {
   position: absolute;
   left: -10px;
   top: -20px;
+}
+.hero__description {
+  color: white;
+  text-align: center;
+  margin-inline: 10px;
+  font-size: 0.85rem;
+  letter-spacing: 0.25rem;
+  font-weight: 300;
+  line-height: 1.5em;
+  max-width: 420px;
+  align-self: center;
+  position: relative;
 }
 .hero__description::after {
   content: "";
@@ -176,26 +193,14 @@ html {
   color: white;
 }
 .galeria {
-  background-color: rgb(107, 207, 13);
-  color: black;
+  background-color: rgb(75, 75, 75);
+  color: rgb(255, 255, 255);
 }
 .hero__bottom {
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 50%;
-}
-.hero__description {
-  color: white;
-  text-align: end;
-  margin-inline: 10px;
-  font-size: 0.85rem;
-  letter-spacing: 0.25rem;
-  font-weight: 300;
-  line-height: 1.5em;
-  max-width: 420px;
-  align-self: flex-end;
-  position: relative;
 }
 
 .hero__arrow {
@@ -211,7 +216,11 @@ html {
   padding: 5px;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
+.container {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
 section {
   /* margin-block: 50px 50px; */
   padding: 100px 10px;
@@ -232,7 +241,7 @@ h2 {
   align-self: flex-end;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 20px;
 }
 h2::after {
   content: "";
@@ -245,14 +254,14 @@ h2::after {
   top: -50px;
 }
 .about__description {
-  text-align: end;
-  color: rgb(32, 32, 32);
+  text-align: justify;
+  color: rgb(0, 0, 0);
   line-height: 1.5rem;
   font-size: 1.2rem;
-  font-weight: 900;
+  font-weight: 400;
   /* max-width: 420px; */
   position: relative;
-  letter-spacing: 0.2rem;
+  /* letter-spacing: 0.2rem; */
 }
 .about__description::before {
   content: "";
@@ -267,7 +276,7 @@ h2::after {
 
 .services {
   background-image: url("./img/instalacja.png");
-  height: 90vh;
+  height: 80vh;
   background-attachment: scroll;
   background-position: center;
   background-repeat: no-repeat;
@@ -280,10 +289,7 @@ h2::after {
   position: relative;
   padding: 0;
 }
-::after,
-::before {
-  opacity: 0;
-}
+
 .services--two {
   background-image: url("./img/konstrukcje.png");
 }
@@ -297,9 +303,10 @@ h2::after {
   letter-spacing: 0.5rem;
   text-align: end;
   width: 100%;
-  padding-block: 10%;
+  padding-block: 5%;
   padding-inline: 10px;
-  background-color: rgb(107, 207, 13, 0.6);
+  background-color: rgb(75, 75, 75, 0.9);
+
   /* backdrop-filter: blur(5px); */
 }
 .certificates {
@@ -317,6 +324,9 @@ h2::after {
 .certificates__img {
   width: 150px;
   height: 150px;
+}
+.certificates__header {
+  margin-bottom: 50px;
 }
 .certificates__header::after {
   content: "";
