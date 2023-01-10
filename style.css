@@ -33,6 +33,7 @@ html {
   z-index: 300;
   top: 0;
   right: 0;
+
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.4);
   box-shadow: 0px 0px 50px 0px rgb(0, 0, 0);
@@ -64,9 +65,9 @@ html {
   box-shadow: 0px 0px 50px 0px rgb(0, 0, 0);
 }
 #navbar {
-  /* position: fixed;
+  position: fixed;
   top: 30px;
-  left: 0; */
+  left: 0;
   z-index: 100;
   display: flex;
   align-items: center;
@@ -75,12 +76,12 @@ html {
   height: 80px;
   width: 100%;
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.8);
   /* background-color: rgba(229, 255, 0, 0.4); */
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
 .aaa {
-  display: block;
+  display: flex;
   margin-top: 30px;
   width: 100%;
 }
@@ -108,18 +109,12 @@ html {
   justify-content: center;
 
   gap: 10%;
-  /* margin-top: 30px; */
-  /* margin-bottom: 30px; */
+
   height: 100%;
   width: 100%;
   color: rgb(255, 255, 255);
 }
 .hero__header {
-  /* text-transform: uppercase; */
-  /* background-color: rgba(255, 255, 255, 0.05); */
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.3); */
-  /* backdrop-filter: blur(10px); */
-  /* padding-inline: 10px; */
   font-size: 1.9em;
   font-weight: 300;
   line-height: 1.2em;
@@ -134,7 +129,7 @@ html {
 }
 .hero__header::after {
   content: "";
-  /* margin-inline: auto; */
+
   margin-top: 5px;
   display: block;
   width: 50vw;
@@ -146,7 +141,7 @@ html {
 }
 .hero__description::after {
   content: "";
-  /* margin-inline: auto; */
+
   margin-top: 10px;
   display: block;
   width: 50vw;
@@ -159,8 +154,6 @@ html {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
-
-  /* gap: 5%; */
   width: 100%;
   margin-bottom: 50px;
 }
@@ -180,10 +173,10 @@ html {
   box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.2);
 }
 .kontakt {
-  background-color: rgba(0, 162, 255, 0.6);
+  background-color: #006199;
 }
 .galeria {
-  background-color: rgba(0, 255, 170, 0.6);
+  background-color: rgba(0, 173, 116, 0.8);
 }
 .hero__bottom {
   width: 100%;
@@ -191,9 +184,6 @@ html {
   flex-direction: column;
 }
 .hero__description {
-  /* margin-left: 0; */
-
-  /* margin-top: 250px; */
   color: white;
   text-align: end;
   margin-inline: 10px;
@@ -272,16 +262,11 @@ h2::after {
   left: -10px;
   bottom: -50px;
 }
+
 .services {
-  /* The image used */
   background-image: url("./img/instalacja.png");
-
-  /* Full height */
   height: 90vh;
-
-  /* Create the parallax scrolling effect */
   background-attachment: scroll;
-  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -307,7 +292,7 @@ h2::after {
   width: 100%;
   padding-block: 2%;
   padding-inline: 10px;
-  background-color: rgba(0, 255, 170, 0.3);
+  background-color: rgba(0, 173, 116, 0.8);
   backdrop-filter: blur(5px);
   margin-bottom: 5vh;
 }
