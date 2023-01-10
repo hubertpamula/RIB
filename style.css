@@ -107,9 +107,8 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  gap: 10%;
-
+  gap: 5%;
+  margin-top: 110px;
   height: 100%;
   width: 100%;
   color: rgb(255, 255, 255);
@@ -129,7 +128,6 @@ html {
 }
 .hero__header::after {
   content: "";
-
   margin-top: 5px;
   display: block;
   width: 50vw;
@@ -141,7 +139,6 @@ html {
 }
 .hero__description::after {
   content: "";
-
   margin-top: 10px;
   display: block;
   width: 50vw;
@@ -155,17 +152,17 @@ html {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 110px;
 }
 .hero__buttons li a {
   text-decoration: none;
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 400;
   color: white;
   padding: 10px 20px;
   width: 120px;
   text-align: center;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   text-transform: uppercase;
   border: none;
   border-radius: 20px;
