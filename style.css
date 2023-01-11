@@ -127,7 +127,7 @@ html {
   letter-spacing: 0.2rem;
   color: rgb(255, 255, 255);
   width: min-content;
-  margin-inline: auto;
+  margin-inline: 10px;
   position: relative;
 }
 .hero__header--big {
@@ -219,9 +219,9 @@ html {
 }
 section {
   margin-block: 50px 50px;
-  padding: 100px 10px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-  background-color: #d7dce2;
+  padding: 50px 10px;
+  /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5); */
+  background-color: #dcdee0;
 }
 
 .about {
@@ -236,7 +236,7 @@ h2 {
   width: 100%;
   align-self: flex-end;
   text-transform: uppercase;
-  text-align: center;
+  text-align: justify;
   margin-bottom: 20px;
 }
 h2::after {
