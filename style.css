@@ -113,7 +113,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 100px;
+  gap: 110px;
   margin-top: 150px;
   margin-bottom: 100px;
   height: 100%;
@@ -145,16 +145,17 @@ html {
   top: -20px;
 }
 .hero__description {
-  color: white;
-  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: justify;
   margin-inline: 10px;
-  font-size: 1rem;
+  font-size: 0.75rem;
   letter-spacing: 0.1rem;
   font-weight: 300;
   line-height: 1.2em;
   max-width: 420px;
   align-self: center;
   position: relative;
+  margin-bottom: 50%;
 }
 .hero__description::after {
   content: "";
