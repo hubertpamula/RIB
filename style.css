@@ -186,7 +186,7 @@ html {
   border: 1px solid black;
   text-transform: capitalize;
   border: none;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   backdrop-filter: blur(1px);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
@@ -252,8 +252,8 @@ h2::after {
 .about__description {
   text-align: justify;
   color: rgb(0, 0, 0);
-  line-height: 1.5rem;
-  font-size: 1.2rem;
+  line-height: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   /* max-width: 420px; */
   position: relative;
@@ -271,8 +271,8 @@ h2::after {
 }
 .services {
   background-image: url("./img/instalacja.png");
-  height: 60vh;
-  background-attachment: scroll;
+  height: 80vh;
+  /* background-attachment: scroll; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -280,7 +280,7 @@ h2::after {
   -moz-background-size: cover;
   -o-background-size: cover;
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   position: relative;
   padding: 0;
 }
@@ -289,7 +289,8 @@ h2::after {
 }
 .services__description {
   bottom: 0;
-  top: 0;
+  top: 89px;
+  /* margin-block: 10px; */
   position: sticky;
   font-size: 1.2rem;
   font-weight: 400;
@@ -297,12 +298,11 @@ h2::after {
   letter-spacing: 0.5rem;
   text-align: center;
   width: 100%;
-  padding-block: 20px;
+  padding-block: 15px;
   padding-inline: 10px;
   background-color: rgb(75, 75, 75, 0.9);
-  margin-block: 10px;
   color: white;
-  /* backdrop-filter: blur(5px); */
+  backdrop-filter: blur(5px);
 }
 .certificates {
   box-shadow: none;
