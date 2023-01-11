@@ -155,7 +155,6 @@ html {
   max-width: 420px;
   align-self: center;
   position: relative;
-  margin-bottom: 50%;
 }
 .hero__description::after {
   content: "";
@@ -198,12 +197,6 @@ html {
 .galeria {
   background-color: rgb(75, 75, 75);
   color: rgb(255, 255, 255);
-}
-.hero__bottom {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 50%;
 }
 
 .hero__arrow {
