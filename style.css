@@ -119,6 +119,7 @@ html {
   height: 100%;
   width: 100%;
   color: rgb(255, 255, 255);
+  padding-inline: 10px;
 }
 .hero__header {
   font-size: 1.9em;
@@ -127,7 +128,7 @@ html {
   letter-spacing: 0.2rem;
   color: rgb(255, 255, 255);
   width: min-content;
-  margin-inline: 10px;
+  /* margin-inline: 10px; */
   position: relative;
 }
 .hero__header--big {
@@ -145,9 +146,9 @@ html {
   top: -20px;
 }
 .hero__description {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.6);
   text-align: justify;
-  margin-inline: 10px;
+  /* margin-inline: 10px; */
   font-size: 0.75rem;
   letter-spacing: 0.1rem;
   font-weight: 300;
@@ -218,9 +219,10 @@ html {
   flex-wrap: wrap;
 }
 section {
+  margin-inline: 20px;
   margin-block: 50px 50px;
-  padding: 50px 10px;
-  /* box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5); */
+  padding: 50px 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
   background-color: #dcdee0;
 }
 
@@ -229,7 +231,8 @@ section {
   flex-direction: column;
 }
 h2 {
-  font-size: 2.8em;
+  font-size: 2.5em;
+  letter-spacing: 0rem;
   font-weight: 300;
   color: rgb(0, 0, 0);
   position: relative;
@@ -271,7 +274,7 @@ h2::after {
 }
 .services {
   background-image: url("./img/instalacja.png");
-  height: 80vh;
+  height: 90vh;
   /* background-attachment: scroll; */
   background-position: center;
   background-repeat: no-repeat;
@@ -280,17 +283,20 @@ h2::after {
   -moz-background-size: cover;
   -o-background-size: cover;
   display: flex;
-  align-items: flex-start;
+  /* align-items: flex-start; */
+  align-items: flex-end;
   position: relative;
   padding: 0;
+  margin-inline: 0;
 }
 .services--two {
   background-image: url("./img/konstrukcje.png");
 }
 .services__description {
   bottom: 0;
-  top: 89px;
-  /* margin-block: 10px; */
+  top: 0;
+  /* top: 89px; */
+  margin-block: 10px;
   position: sticky;
   font-size: 1.2rem;
   font-weight: 400;
@@ -317,8 +323,8 @@ h2::after {
   position: relative;
 }
 .certificates__img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
 }
 .certificates__header {
   margin-bottom: 50px;
