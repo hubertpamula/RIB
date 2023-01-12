@@ -78,8 +78,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px 10px;
-  height: 80px;
+  /* padding: 30px 10px; */
+  height: 60px;
   width: 100%;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.9);
@@ -96,7 +96,7 @@ html {
   top: 0px;
 }
 .header__logo {
-  width: 150px;
+  width: 80px;
 }
 .header__burger {
   /* border: 1px solid black; */
@@ -104,8 +104,8 @@ html {
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
-  width: 35px;
-  height: 30px;
+  width: 30px;
+  height: 25px;
   fill: black;
   z-index: 200;
 }
@@ -113,9 +113,9 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 110px;
-  margin-top: 150px;
-  margin-bottom: 100px;
+  /* gap: 100px; */
+  margin-top: 120px;
+  margin-bottom: 120px;
   height: 100%;
   width: 100%;
   color: rgb(255, 255, 255);
@@ -174,7 +174,7 @@ html {
   align-items: center;
   height: 40px;
   /* width: 100%; */
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .hero__buttons li a {
   text-decoration: none;
@@ -196,8 +196,10 @@ html {
   color: white;
 }
 .galeria {
-  background-color: rgb(75, 75, 75);
-  color: rgb(255, 255, 255);
+  /* background-color: rgb(75, 75, 75);
+  color: rgb(255, 255, 255); */
+  background-color: white;
+  color: rgb(6, 81, 167);
 }
 
 .hero__arrow {
@@ -274,7 +276,7 @@ h2::after {
 }
 .services {
   background-image: url("./img/instalacja.png");
-  height: 80vh;
+  height: 40vh;
   /* background-attachment: scroll; */
   background-position: center;
   background-repeat: no-repeat;
@@ -284,7 +286,7 @@ h2::after {
   -o-background-size: cover;
   display: flex;
   /* align-items: flex-start; */
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   position: relative;
   padding: 0;
@@ -293,24 +295,39 @@ h2::after {
 .services--two {
   background-image: url("./img/konstrukcje.png");
 }
+.services--three {
+  background-image: url("./img/rysunek.png");
+}
+.services--four {
+  background-image: url("./img/prasa.png");
+}
 .services__description {
-  bottom: 10px;
+  bottom: 0px;
   top: 0;
   /* top: 89px; */
-  margin: 10px 20px;
+  /* margin: 10px 0; */
   position: sticky;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
+  height: 60px;
   border-radius: 5px;
-  padding-block: 20px;
-  padding-inline: 10px;
+  /* padding-block: 10px; */
+  /* padding-inline: 10px; */
   background-color: rgb(75, 75, 75, 0.9);
   color: white;
-  backdrop-filter: blur(5px);
+  /* background-color: rgba(255, 255, 255, 0.9);
+  color: rgb(6, 81, 167); */
+  /* backdrop-filter: blur(5px); */
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.klasa {
 }
 .certificates {
   box-shadow: none;
