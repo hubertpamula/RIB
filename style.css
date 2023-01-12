@@ -274,7 +274,7 @@ h2::after {
 }
 .services {
   background-image: url("./img/instalacja.png");
-  height: 90vh;
+  height: 80vh;
   /* background-attachment: scroll; */
   background-position: center;
   background-repeat: no-repeat;
