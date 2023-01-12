@@ -187,7 +187,7 @@ html {
   border: 1px solid black;
   text-transform: capitalize;
   border: none;
-  /* border-radius: 20px; */
+  border-radius: 5px;
   backdrop-filter: blur(1px);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
@@ -285,6 +285,7 @@ h2::after {
   display: flex;
   /* align-items: flex-start; */
   align-items: flex-end;
+  justify-content: center;
   position: relative;
   padding: 0;
   margin-inline: 0;
@@ -293,7 +294,7 @@ h2::after {
   background-image: url("./img/konstrukcje.png");
 }
 .services__description {
-  bottom: 0;
+  bottom: 10px;
   top: 0;
   /* top: 89px; */
   margin-block: 10px;
@@ -303,7 +304,8 @@ h2::after {
   text-transform: uppercase;
   letter-spacing: 0.5rem;
   text-align: center;
-  width: 100%;
+  width: 95%;
+  border-radius: 5px;
   padding-block: 20px;
   padding-inline: 10px;
   background-color: rgb(75, 75, 75, 0.9);
