@@ -119,7 +119,7 @@ html {
   height: 100%;
   width: 100%;
   color: rgb(255, 255, 255);
-  padding-inline: 20px;
+  padding-inline: 10px;
 }
 .hero__header {
   font-size: 1.9em;
@@ -303,7 +303,7 @@ h2::after {
 }
 .services__description {
   bottom: 0px;
-  top: 0;
+  /* top: 0; */
   /* top: 89px; */
   /* margin: 10px 0; */
   position: sticky;
