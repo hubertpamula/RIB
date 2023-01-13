@@ -149,7 +149,7 @@ html {
   align-items: center;
   height: 40px;
   /* width: 100%; */
-  /* margin-top: 20px; */
+  margin-block: 20px;
 }
 .hero__buttons li a {
   text-decoration: none;
@@ -188,7 +188,7 @@ html {
   /* border: 1px solid white; */
   border-radius: 50%;
   padding: 5px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 .container {
   display: flex;
@@ -226,17 +226,14 @@ h2 {
   position: relative;
   /* letter-spacing: 0.2rem; */
 }
-section {
-  min-width: 90%;
-  height: 100vh;
+.services {
+  width: 90%;
+  height: 60vh;
   margin-block: 20px;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
   background-color: #dcdee0;
-}
-.services {
-  height: 60vh;
-  /* background-attachment: scroll; */
+  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -284,11 +281,7 @@ section {
     url("./img/giętarka.jpg");
 }
 .services__info {
-  bottom: 0px;
-  /* top: 0; */
-  top: 70px;
   margin: 20px 0;
-  /* position: sticky; */
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 900;
@@ -300,9 +293,6 @@ section {
   justify-content: center;
   width: 100%;
   height: 80px;
-  /* border-radius: 20px; */
-  /* padding-block: 10px; */
-  /* padding-inline: 10px; */
   /* background-color: rgba(15, 14, 14, 0.8); */
   color: white;
   /* background-color: rgba(255, 255, 255, 0.9);
@@ -375,6 +365,36 @@ section {
     background-position-x: 50%;
   }
 }
+@-webkit-keyframes slideBg {
+  0% {
+    background-image: linear-gradient(
+        180deg,
+        rgba(37, 37, 37, 0.6) 25%,
+        rgba(0, 0, 0, 0.85) 70%
+      ),
+      url("./img/bg1.png");
+    background-position-x: 20%;
+  }
+
+  50% {
+    background-image: linear-gradient(
+        180deg,
+        rgba(37, 37, 37, 0.6) 25%,
+        rgba(0, 0, 0, 0.85) 70%
+      ),
+      url("./img/bg2.png");
+    background-position-x: 40%;
+  }
+  100% {
+    background-image: linear-gradient(
+        180deg,
+        rgba(37, 37, 37, 0.6) 25%,
+        rgba(0, 0, 0, 0.85) 70%
+      ),
+      url("./img/bg3.png");
+    background-position-x: 50%;
+  }
+}
 
 .bounceOutDown {
   -webkit-animation-name: bounceOutDown;
@@ -383,7 +403,7 @@ section {
   animation-duration: 1.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
-  animation-delay: 10s;
+  animation-delay: 2s;
 }
 @-webkit-keyframes bounceOutDown {
   20% {
