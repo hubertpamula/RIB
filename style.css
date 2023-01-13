@@ -229,7 +229,7 @@ h2 {
 section {
   min-width: 90%;
   height: 100vh;
-  margin-block: 10px;
+  margin-block: 20px;
   border-radius: 20px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
   background-color: #dcdee0;
@@ -261,7 +261,7 @@ section {
 .services--four {
   background-image: url("./img/prasa.png");
 }
-.services__description {
+.services__info {
   bottom: 0px;
   /* top: 0; */
   top: 70px;
