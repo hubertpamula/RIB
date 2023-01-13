@@ -28,11 +28,6 @@ html {
   background: rgb(37, 37, 37);
 }
 
-::after,
-::before {
-  opacity: 0;
-}
-
 .mobile__nav {
   position: fixed;
   z-index: 300;
@@ -68,7 +63,7 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0px 0px 50px 0px rgb(0, 0, 0);
+  box-shadow: 0px 0px 5px 0px rgb(0, 0, 0);
 }
 #navbar {
   position: fixed;
@@ -81,8 +76,7 @@ html {
   /* padding: 30px 10px; */
   height: 60px;
   width: 100%;
-  backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgb(255, 255, 255);
   /* background-color: rgba(229, 255, 0, 0.4); */
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
@@ -134,17 +128,7 @@ html {
 .hero__header--big {
   font-size: 2.8rem;
 }
-.hero__header::after {
-  content: "";
-  margin-top: 5px;
-  display: block;
-  width: 50vw;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.2);
-  position: absolute;
-  left: -10px;
-  top: -20px;
-}
+
 .hero__description {
   color: rgba(255, 255, 255, 0.6);
   text-align: justify;
@@ -157,16 +141,7 @@ html {
   align-self: center;
   position: relative;
 }
-.hero__description::after {
-  content: "";
-  margin-top: 10px;
-  display: block;
-  width: 50vw;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.2);
-  position: absolute;
-  right: -10px;
-}
+
 .hero__buttons {
   list-style: none;
   display: flex;
@@ -184,10 +159,10 @@ html {
   padding: 10px 25px;
 
   text-align: center;
-  border: 1px solid black;
+  border: 2px solid black;
   text-transform: capitalize;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   backdrop-filter: blur(1px);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
 }
@@ -220,13 +195,6 @@ html {
   /* flex-direction: column; */
   flex-wrap: wrap;
 }
-section {
-  margin-inline: 20px;
-  margin-block: 50px 50px;
-  padding: 50px 20px;
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
-  background-color: #dcdee0;
-}
 
 .about {
   display: flex;
@@ -244,15 +212,9 @@ h2 {
   text-align: justify;
   margin-bottom: 20px;
 }
-h2::after {
-  content: "";
-  display: block;
-  width: 50vw;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  right: -10px;
-  top: -50px;
+.section {
+  display: flex;
+  flex-wrap: wrap;
 }
 .about__description {
   text-align: justify;
@@ -264,19 +226,18 @@ h2::after {
   position: relative;
   /* letter-spacing: 0.2rem; */
 }
-.about__description::before {
-  content: "";
-  display: block;
-  width: 50vw;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: -10px;
-  bottom: -50px;
+section {
+  min-width: 95%;
+  height: 100vh;
+  margin-block: 10px;
+  border-radius: 20px;
+  padding: 50px 20px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
+  background-color: #dcdee0;
 }
 .services {
   background-image: url("./img/instalacja.png");
-  height: 40vh;
+  height: 70vh;
   /* background-attachment: scroll; */
   background-position: center;
   background-repeat: no-repeat;
@@ -290,7 +251,7 @@ h2::after {
   justify-content: center;
   position: relative;
   padding: 0;
-  margin-inline: 0;
+  margin-inline: auto;
 }
 .services--two {
   background-image: url("./img/konstrukcje.png");
@@ -304,30 +265,36 @@ h2::after {
 .services__description {
   bottom: 0px;
   /* top: 0; */
-  /* top: 89px; */
-  /* margin: 10px 0; */
+  top: 70px;
+  margin: 10px 0;
   position: sticky;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5rem;
-  text-align: center;
+  letter-spacing: 0.2rem;
+  text-align: justify;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 60px;
-  border-radius: 5px;
+  width: 90%;
+  height: 80px;
+  border-radius: 20px;
   /* padding-block: 10px; */
   /* padding-inline: 10px; */
-  background-color: rgb(75, 75, 75, 0.9);
+  background-color: rgba(15, 14, 14, 0.95);
   color: white;
   /* background-color: rgba(255, 255, 255, 0.9);
   color: rgb(6, 81, 167); */
   /* backdrop-filter: blur(5px); */
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 100px 0px rgb(0, 0, 0);
 }
-.klasa {
+.icon-info {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  position: absolute;
+  right: 20px;
+  top: 30px;
 }
 .certificates {
   box-shadow: none;
@@ -348,26 +315,7 @@ h2::after {
 .certificates__header {
   margin-bottom: 50px;
 }
-.certificates__header::after {
-  content: "";
-  display: block;
-  width: 50vw;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  left: -10px;
-  bottom: -50px;
-}
-.certificates__container::before {
-  content: "";
-  display: block;
-  width: 50vw;
-  height: 2px;
-  background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  right: -10px;
-  bottom: -50px;
-}
+
 .contact {
   background-color: #006199;
 }
