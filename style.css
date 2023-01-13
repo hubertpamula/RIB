@@ -227,17 +227,16 @@ h2 {
   /* letter-spacing: 0.2rem; */
 }
 section {
-  min-width: 95%;
+  min-width: 90%;
   height: 100vh;
-  margin-block: 20px;
+  margin-block: 10px;
   border-radius: 20px;
-  padding: 50px 20px;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.7);
   background-color: #dcdee0;
 }
 .services {
   background-image: url("./img/instalacja.png");
-  height: 70vh;
+  height: 80vh;
   /* background-attachment: scroll; */
   background-position: center;
   background-repeat: no-repeat;
