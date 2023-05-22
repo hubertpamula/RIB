@@ -196,35 +196,45 @@ html {
   flex-wrap: wrap;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-}
 h2 {
-  font-size: 2.5em;
-  letter-spacing: 0rem;
-  font-weight: 300;
+  font-size: 3em;
+  font-weight: 600;
   color: rgb(0, 0, 0);
   position: relative;
   width: 100%;
-  align-self: flex-end;
   text-transform: uppercase;
-  text-align: justify;
-  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+h2::after{
+  content: " ";
+  background-color: white;
+  width: 100%;
+  height: 2px;
+  display: block;
+  position: absolute;
+  top: 27px;
 }
 .section {
   display: flex;
   flex-wrap: wrap;
 }
+.about {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
 .about__description {
-  text-align: justify;
+  text-align: center;
   color: rgb(0, 0, 0);
-  line-height: 1.2rem;
-  font-size: 1rem;
-  font-weight: 400;
+  line-height: 1.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
   /* max-width: 420px; */
   position: relative;
-  /* letter-spacing: 0.2rem; */
+  letter-spacing: 0.1rem;
+  margin-bottom: 20px;
 }
 .services {
   width: 90%;
