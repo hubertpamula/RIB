@@ -10,17 +10,17 @@ html {
   font-family: "Lato", sans-serif;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(100, 100, 100);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: rgb(59, 59, 59);
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 /* Handle on hover */
@@ -130,14 +130,14 @@ html {
 }
 
 .hero__description {
-  color: rgba(255, 255, 255, 0.6);
-  text-align: justify;
+  color: rgb(255, 255, 255);
+  text-align: center;
   /* margin-inline: 10px; */
   font-size: 0.8rem;
-  letter-spacing: 0.1rem;
-  font-weight: 300;
-  line-height: 1.2em;
-  max-width: 420px;
+  letter-spacing: 0.25rem;
+  font-weight: 100;
+  line-height: 1.3em;
+  /* max-width: 420px; */
   align-self: center;
   position: relative;
 }
@@ -254,11 +254,27 @@ h2::after{
   -moz-background-size: cover;
   -o-background-size: cover;
   display: flex;
+  flex-direction: column;
   /* align-items: flex-start; */
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   position: relative;
-  padding: 0;
+  padding: 0; 
+
+}
+.services:hover{
+
+}
+.services__description{
+  background-color: red;
+  text-align: center;
+  width: 360px;
+
+  padding: 20px;
+  color: white;
+  border-bottom-left-radius: 20px ;
+  border-bottom-right-radius: 20px ;
+  overflow: hidden;
 }
 .services--one {
   background-image: radial-gradient(
@@ -293,7 +309,7 @@ h2::after{
     url("./img/giętarka.jpg");
 }
 .services__info {
-  margin: 20px 0;
+  margin: auto;
   font-size: 1.3rem;
   line-height: 2rem;
   font-weight: 900;
