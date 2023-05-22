@@ -222,7 +222,8 @@ h2::after{
 }
 .about {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
   margin: 20px;
 }
 .about__description {
@@ -231,7 +232,7 @@ h2::after{
   line-height: 1.3rem;
   font-size: 0.8rem;
   font-weight: 600;
-  /* max-width: 420px; */
+  max-width: 420px;
   position: relative;
   letter-spacing: 0.1rem;
   margin-bottom: 20px;
