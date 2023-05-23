@@ -74,7 +74,7 @@ html {
   align-items: center;
   justify-content: center;
   /* padding: 30px 10px; */
-  height: 50px;
+  height: clamp(50px, 5vw + 1rem, 8vh);
   width: 100%;
   background-color: rgb(255, 255, 255);
   /* background-color: rgba(229, 255, 0, 0.4); */
@@ -90,7 +90,8 @@ html {
   top: 0px;
 }
 .header__logo {
-  width: 70px;
+  /* width: 70px; */
+  width: clamp(70px, 6vw + 1rem, 20vh);
 }
 .header__burger {
   /* border: 1px solid black; */
@@ -116,7 +117,7 @@ html {
   padding-inline: 10px;
 }
 .hero__header {
-  font-size: 1.9em;
+  font-size: clamp(1.9rem, 3vw + 1rem, 4rem);
   font-weight: 300;
   line-height: 1.2em;
   letter-spacing: 0.2rem;
@@ -126,13 +127,14 @@ html {
   position: relative;
 }
 .hero__header--big {
-  font-size: 2.8rem;
+  font-size: clamp(2.5rem, 5vw + 1rem, 6rem);
+  font-weight: 600;
 }
 
 .hero__description {
   color: rgb(255, 255, 255);
   text-align: center;
-  /* margin-inline: 10px; */
+  margin-inline: 10px;
   font-size: 0.8rem;
   letter-spacing: 0.25rem;
   font-weight: 300;
