@@ -74,7 +74,7 @@ html {
   align-items: center;
   justify-content: center;
   /* padding: 30px 10px; */
-  height: clamp(70px, 7vw + 2rem, 10vh);
+  height: clamp(50px, 7vw + 2rem, 10vh);
   width: 100%;
   backdrop-filter: blur(3px);
   background-color: rgba(255, 255, 255, 0.8);
@@ -91,7 +91,7 @@ html {
 }
 .header__logo {
   /* width: 70px; */
-  width: clamp(80px, 7vw + 2rem, 15vh);
+  width: clamp(80px, 8vw + 3rem, 15vh);
 }
 .header__burger {
   /* border: 1px solid black; */
@@ -207,8 +207,8 @@ h2 {
   width: 100%;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 7vw;
-  margin-top: 7vw;
+  margin-top: 8vw;
+  margin-bottom: 8vw;
 }
 h2::after{
   content: " ";
@@ -223,7 +223,7 @@ h2::after{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 5vw;
+  margin-inline: 5vw;
 }
 .about__description {
   text-align: center;
@@ -241,14 +241,16 @@ h2::after{
   flex-wrap: wrap;
   justify-content:space-evenly;
 }
+
 .services {
-  min-width: 320px;
+  /* min-width: 300px; */
+  width: clamp(350px, 1vw + 2rem, 300px);
   min-height: 550px;
-  margin:20px;
+  margin-inline: 20px;
+  margin-bottom: 100px;
   border-radius: 20px;
   box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
   background-color: #dcdee0;
-  /* background-attachment: fixed; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -263,6 +265,7 @@ h2::after{
   position: relative;
   padding: 0; 
   overflow: hidden;
+  z-index: 0;
   
 }
 .services:hover .services__description{
@@ -281,15 +284,16 @@ transform: translateY(-110%);
   
   transition: transform 0.5s ease;
   transform: translateY(310%);
-  opacity: 50%;
+  right:0;
+  opacity: 70%;
   text-align: end;
   width: 320px;
-  font-size: 1em;
+  font-size: 0.8rem;
   line-height: 1rem;
   letter-spacing: 0.3rem;
-  font-weight: 300;
+  font-weight: 400;
   padding: 20px;
-  color: rgb(251, 255, 0);
+  color: rgb(255, 255, 255);
   border-bottom-left-radius: 20px ;
   border-bottom-right-radius: 20px ;
   /* -webkit-transform: translateY(210%); */

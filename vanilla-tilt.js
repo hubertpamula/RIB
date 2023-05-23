@@ -428,7 +428,7 @@ class VanillaTilt {
       transition: false,
       axis: null,
       glare: true,
-      "max-glare": 0.1,
+      "max-glare": 0.2,
       "glare-prerender": false,
       "full-page-listening": false,
       "mouse-event-element": null,
