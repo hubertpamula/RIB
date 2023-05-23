@@ -262,21 +262,34 @@ h2::after{
   justify-content: center; */
   position: relative;
   padding: 0; 
-
+  overflow: hidden;
+  
 }
-.services:hover{
+.services:hover .services__description{
+transform: translateY(140%);
+}
+.services:hover .aaa{
+transform: translateY(-100%);
+}
+.aaa{
+  transition: transform 0.5s ease;
 
 }
 .services__description{
-  background-color: red;
-  text-align: center;
+  transition: transform 0.5s ease;
+  transition-delay: 0.5s;
+  text-align: end;
   width: 360px;
-
+  font-size: 1rem;
+  line-height: 1.2rem;
+  letter-spacing: 0.3rem;
+  font-weight: 100;
   padding: 20px;
-  color: white;
+  color: rgb(251, 255, 0);
   border-bottom-left-radius: 20px ;
   border-bottom-right-radius: 20px ;
-  overflow: hidden;
+  transform: translateY(235%);
+  position: absolute;
 }
 .services--one {
   background-image: radial-gradient(
