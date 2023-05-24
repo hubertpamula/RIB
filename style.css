@@ -74,7 +74,7 @@ html {
   align-items: center;
   justify-content: center;
   /* padding: 30px 10px; */
-  height: clamp(50px, 7vw + 2rem, 10vh);
+  height: clamp(100px, 8vw + 2rem, 20vh);
   width: 100%;
   backdrop-filter: blur(3px);
   background-color: rgba(255, 255, 255, 0.8);
@@ -91,7 +91,7 @@ html {
 }
 .header__logo {
   /* width: 70px; */
-  width: clamp(70px, 7vw + 3rem, 15vh);
+  width: clamp(100px, 7vw + 3rem, 20vh);
 }
 .header__burger {
   /* border: 1px solid black; */
