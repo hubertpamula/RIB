@@ -74,7 +74,7 @@ html {
   align-items: center;
   justify-content: center;
   /* padding: 30px 10px; */
-  height: clamp(100px, 8vw + 2rem, 20vh);
+  height: clamp(100px, 8vw + 2rem, 15vh);
   width: 100%;
   backdrop-filter: blur(3px);
   background-color: rgba(255, 255, 255, 0.8);
@@ -91,7 +91,7 @@ html {
 }
 .header__logo {
   /* width: 70px; */
-  width: clamp(100px, 7vw + 3rem, 20vh);
+  width: clamp(100px, 7vw + 3rem, 18vh);
 }
 .header__burger {
   /* border: 1px solid black; */
@@ -110,8 +110,8 @@ html {
   justify-content: space-between;
   /* gap: 100px; */
   /* margin-top: 120px; */
-  margin-top: clamp(150px, 15vw + 5rem, 20vh) ;
-  margin-bottom: 120px;
+  margin-top: clamp(100px, 10vw + 1rem, 15vh) ;
+  margin-bottom: 100px;
   height: 100%;
   width: 100%;
   color: rgb(255, 255, 255);
