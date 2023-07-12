@@ -76,7 +76,7 @@ html {
   /* padding: 30px 10px; */
   height: clamp(100px, 8vw + 2rem, 15vh);
   width: 100%;
-  backdrop-filter: blur(3px);
+  /* backdrop-filter: blur(1px); */
   background-color: rgba(255, 255, 255, 0.8);
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 }
